@@ -55,13 +55,13 @@ The system must:
    python Scripts/Generate_User_Profile.py
 
 2. **Start the API:**
-   - Run Order_Handler.py to start the FastAPI server. The API will be hosted on port 8080.
+   - Run `Order_Handler.py` to start the FastAPI server. The API will be hosted on port 8080.
 
    ```bash
    uvicorn Scripts.Order_Handler:app --host 0.0.0.0 --port 8080
 
 3. **Produce Orders:**
-   - Run Order_Producer.py on a different terminal to produce random orders at 1-second intervals and send them to the API.
+   - Run `Order_Producer.py` on a different terminal to produce random orders at 1-second intervals and send them to the API.
 
    ```bash
    python Scripts/Order_Producer.py
